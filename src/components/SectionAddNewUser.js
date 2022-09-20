@@ -126,7 +126,7 @@ function SectionAddNewUser({positions, sendData}){
                 <span className="radio-button-title">Select your position</span>
                 {positions.length > 0 ? positions.map(item => <RadioInput position={item} key={item.id}/>) : <Loader/>}
                 {radioButtonInvalid ?<span className={"input-block-helper " + radioButtonInvalid}>You must select position</span> : null}
-                <label className={"input-file " + phoneInvalid+"-border"}>
+                <label className={"input-file " + photoInvalid+"-border"}>
                     <input 
                         type='file' 
                         accept="image/jpeg" 
