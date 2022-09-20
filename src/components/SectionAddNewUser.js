@@ -24,7 +24,6 @@ function SectionAddNewUser({positions, sendData}){
 
         //name validation, changes input styles
         if(2 > e.target.name.value.length || e.target.name.value.length > 60){
-            console.log('name validation error')
             setNameInvalid("invalid");
             validated=false;
         }else{
@@ -33,7 +32,6 @@ function SectionAddNewUser({positions, sendData}){
 
         //email validation, changes input styles
         if(2 > e.target.email.value.length || e.target.email.value.length > 100 || !e.target.email.value.match(validEmail)){
-            console.log('email validation error')
             setEmailInvalid("invalid");
             validated=false;
         }else{
@@ -42,7 +40,6 @@ function SectionAddNewUser({positions, sendData}){
         
         //phone validation, changes input styles
         if(!e.target.phone.value.match(validPhone)){
-            console.log('phone validation error')
             setPhoneInvalid("invalid")
             validated=false;
         }else{
@@ -51,7 +48,6 @@ function SectionAddNewUser({positions, sendData}){
 
         //position validation, changes input styles
         if(!e.target.position[0].checked && !e.target.position[1].checked && !e.target.position[2].checked && !e.target.position[3].checked){
-            console.log('radio button validation error')
             setRadioButtonInvalid("invalid");
             validated=false;
         }else{
@@ -60,23 +56,20 @@ function SectionAddNewUser({positions, sendData}){
 
         //photo validation and size validation, changes input styles
         if(!e.target.photo.files[0]){
-            console.log('file validation error')
             setPhotoInvalid("invalid");
             setPhotoError('Choose photo');
             validated=false;
         } else if(e.target.photo.files[0].size > maxFileSize){
-            console.log('file validation error')
             setPhotoInvalid("invalid");
             setPhotoError('Photo size > 5MB');
             validated=false;
         } else{
-            setPhoneInvalid(false);
+            setPhotoInvalid(false);
             setPhotoError(false);
         }
 
         //photo name validation, changes input styles
         if(2 > e.target.photo_name.value.length || e.target.photo_name.value.length > 60){
-            console.log('photo name validation error');
             setPhotoNameInvalid("invalid");
             validated=false;
         }else{

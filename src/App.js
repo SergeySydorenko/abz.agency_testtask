@@ -38,7 +38,7 @@ function App() {
       setPage(prevState => prevState + 1);
     }
     if(page == totalPages-1){
-      
+
       //button show more will be hidden when last page of users will loaded
       setVisibleButton(false);
     }
@@ -64,7 +64,7 @@ function App() {
     formData.append('photo', e.target.photo.files[0], e.target[8].value);
 
     //gets token then uploads form data to database api when finished reloads first page of users
-    getToken().then(res => postUser(formData, res.data.token).catch(err=>console.log(err)).finally(()=>{
+    getToken().then(res => postUser(formData, res.data.token).catch(err=>alert(err)).finally(()=>{
       setVisibleModal(0);
       getUsers(page).then(res => {
         setUsersData(res.data.users);
