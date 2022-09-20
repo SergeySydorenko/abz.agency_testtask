@@ -1,0 +1,87 @@
+.user-block{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 328px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+@media screen and (min-width: 768px){
+    .user-block{
+        margin: 8px;
+        width: 344px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .user-block{
+        width: 282px;
+        margin: 14.5px;
+    }
+}
+@media screen and (min-width: 2560px){
+    .user-block{
+        width: 370px;
+        margin: 0 1px 29px 0;
+    }
+}
+.user-block img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.user-block *{
+    background-color: #ffffff;
+}
+.user-block span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:inline-block;
+    line-height: 26px;
+
+    width: 288px;
+}
+@media screen and (min-width: 768px){
+    .user-block span{
+        width: 304px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .user-block span{
+        width: 242px;
+    }
+}
+@media screen and (min-width: 2560px){
+    .user-block span{
+        width: 330px;
+    }
+}
+
+.user-block-name{
+    height: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.user-block-email{
+    height: 26px;
+    line-height: 26px;
+    cursor: pointer;
+}
+.tooltiptext {
+    visibility: hidden;
+    padding: 3px 16px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.user-block-email:hover .tooltiptext {
+    visibility: visible;
+}

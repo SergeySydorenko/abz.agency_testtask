@@ -1,0 +1,119 @@
+.section-newUser{
+    margin-left: auto;
+    margin-right: auto;
+    width: 328px;
+}
+@media screen and (min-width: 768px){
+    .section-newUser{
+        width: 704px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .section-newUser{
+        width: 904px;
+    }
+}
+@media screen and (min-width: 2560px){
+    .section-newUser{
+        width: 1170px;
+    }
+}
+
+.section-newUser h2{
+    font-size: 40px;
+    padding-top: 140px;
+    line-height: 40px;
+    margin-bottom: 16px;
+}
+.section-newUser-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+@media screen and (min-width: 768px){
+    .section-newUser-form{
+        width: 380px;
+    }
+}
+.section-newUser-form span{
+    align-self: flex-start;
+}
+
+.radio-button-title{
+    margin-top: 26px;
+    margin-bottom: 7.5px;
+}
+.mobile-example{
+    color: #7E7E7E;
+    line-height: 14px;
+    font-size: 12px;
+    margin-left: 16px;
+}
+.radio-input-block{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    margin-top: 6.5px;
+}
+
+.radio-input-block span{
+    line-height: 26px;
+}
+
+.input-file{
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 47px;
+    width: 328px;
+    height: 54px;
+    border: 1px solid #D0CFCF;
+}
+@media screen and (min-width: 768px){
+    .input-file{
+        width: 380px;
+    }
+}
+.file{
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+.input-file::before {
+    content: 'Upload';
+    height: 54px;
+    min-width: 83px;
+    line-height: 54px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: inherit;
+}
+.input-file-block span{
+    float: left;
+}
+.input-file-name {
+    outline: none;
+
+    height: 56px;
+    width: calc(100% + 1px);
+
+    padding-left: 16px;
+    margin-top: 4px;
+
+    font-size: 16px;
+    line-height: 26px;
+    text-align: start;
+
+    border: 1px solid #D0CFCF;
+    color: #7E7E7E;
+}
+
+.hidden{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
