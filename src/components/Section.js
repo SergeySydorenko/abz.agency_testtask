@@ -1,4 +1,4 @@
-import background from '../bgImage.png';
+import background from '../bgImage.webp';
 function Section(){
     return(
         <section 
