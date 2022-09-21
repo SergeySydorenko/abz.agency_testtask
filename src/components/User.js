@@ -2,7 +2,7 @@ const User = ({user})=>{
 
     return(
         <div className="user-block">
-            <img src={user.photo}></img>
+            <img src={user.photo} alt="User"></img>
             <span className="user-block-name">{user.name}</span>
             <span>{user.position}</span>
             <div className="user-block-email">
